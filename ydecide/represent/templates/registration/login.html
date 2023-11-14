@@ -1,0 +1,12 @@
+{% extends "represent/base.html" %}
+
+{% block title %}Вход{% endblock %}
+
+{% block content %}
+<h1>Вход:</h1>
+<hr>
+<p>Войдите!</p>
+<form action="{% url 'login' %}" method="post">
+    {{ form }}
+</form>
+{% endblock %}
